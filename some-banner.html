@@ -1,27 +1,7 @@
 <html>
   <template id="nameTagTemplate">
     <style>
-    .outer {
-      border: 2px solid brown;
-      border-radius: 1em;
-      background: red;
-      font-size: 20pt;
-      width: 12em;
-      height: 7em;
-      text-align: center;
-    }
-    .boilerplate {
-      color: white;
-      font-family: sans-serif;
-      padding: 0.5em;
-    }
-    .name {
-      color: black;
-      background: white;
-      font-family: "Marker Felt", cursive;
-      font-size: 45pt;
-      padding-top: 0.2em;
-    }
+
 
     h1 {
       background-color: blue;
@@ -29,13 +9,7 @@
     }
 
     </style>
-    <div class="outer">
-      <div class="boilerplate">
-        <h1>Inside shadow dom</h1> <!-- this will NOT be manipulated -->
-      </div>
-      <div class="name">
-        <content></content>
-      </div>
+        <h1><content></content></h1> <!-- this will NOT be manipulated -->
     </div>
   </template>
   <script>
